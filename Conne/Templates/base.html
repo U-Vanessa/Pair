@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Agri-Connect{% endblock %}</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/home.css') }}">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('app.home') }}">Home</a></li>
+                <li><a href="{{ url_for('app.about') }}">About</a></li>
+                <li><a href="{{ url_for('app.services') }}">Services</a></li>
+                <li><a href="{{ url_for('app.contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Agri-Connect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

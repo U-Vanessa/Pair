@@ -1,0 +1,495 @@
+/* Body Styling */
+body {
+  background: #264d2dca;
+  color: #fff;
+  font-family: "Poppins", helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+
+#header {
+  background: #3f3333;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  box-shadow: 0px 2px 25px rgba(96, 96, 96, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  top: 0;
+}
+
+/* Logo Styling */
+
+#header .logo {
+  display: flex;
+  align-items: center;
+}
+
+#header .logo img {
+  max-height: 80px;
+  width: 50px;
+  margin-right: 15px;
+}
+
+/* Navbar Styling */
+
+#header .navbar {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  gap: 30px;
+  padding: 3px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-list .navi{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 100px;
+}
+
+/* Navbar Link Styling */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.navbar .active {
+  color: #b8a07e;
+}
+
+/* Dropdown Menu Styling */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(127, 137, 161, 0.991);
+  padding: 10px 0;
+  list-style: none;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+.dropdown ul li {
+  padding: 10px 20px;
+}
+
+.dropdown ul a {
+  color: #a0f273ab;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.dropdown ul a:hover {
+  color: #9ad758d4;
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #1b191986;
+      width: 100%;
+      display: none;
+      padding: 20px;
+  }
+
+  .navbar.navbar-mobile {
+      display: flex;
+  }
+
+  .nav-list {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+  }
+
+  .dropdown ul {
+      position: static;
+      padding-left: 20px;
+  }
+
+  .dropdown ul li {
+      padding: 10px 0;
+  }
+
+  .dropdown ul a {
+      color: #4b4a4a;
+  }
+
+}
+/* Specific Color and Style Adjustments */
+.navbar a,
+.navbar a:focus {
+  color: #7e7d7d;
+}
+
+.navbar a:hover {
+  color: #b8a07e;
+}
+
+.navbar .active {
+  color: #b8a07e;
+}
+
+.nav-link .nav-list .btn {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: var(--side);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+/* Hero Styling */
+.hero {
+  color: #0f0f0fe8;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* .hero img {
+  background-color: #211010e0;
+  border-radius: 5px;
+  background-size: cover;        /* Make the image cover the entire area */
+  /* background-position: center;   /* Center the image */
+  /*background-repeat: no-repeat;  /* Prevent the image from repeating */
+  /*width: 100%;                   /* Full width */
+  /*height: 100vh;              /* Fixed height */
+  /*object-fit: cover;             /* Ensure the image retains its aspect ratio */
+  /*position: relative;
+  /*z-index: -1;*/
+  /*margin-top: 0px;
+}*/
+
+.hero .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Serives and blog Styling */
+
+/*.services {
+  display: grid;
+  gap: 20px;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #6085409a;
+}*/
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center image and description */
+  gap: 10px; /* Add spacing between image and text */
+  max-width: 300px; /* Adjust width to fit your layout */
+  margin: auto; /* Center the service blocks horizontally */
+  background-color: #6085409a;
+}
+
+/*
+.services {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #6085409a;
+}
+  */
+
+.service-slider {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition */
+  width: 100%; /* Set each service to take up full slider width */
+  padding: 10px;
+  text-align: center;
+  flex: 0 0 33.3333%; /* Each item takes one-third of the full width */
+
+}
+
+/*
+    .service img {
+     width: 60%;
+     max-height: 300px; /* Adjust this value to control image height */
+  /* object-fit: cover; /* Ensures the image fills the container without distortion */
+  /* border-radius: 8px;
+}*/
+
+.service img {
+  width: 100%; /* Make the image fill its container */
+  max-height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures no distortion */
+  border-radius: 8px;
+}
+
+.description {
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.service-list {
+  display: flex;
+  gap: 20px; /* Add space between services */
+  justify-content: center; /* Center services horizontally */
+  flex-wrap: wrap; /* Allow wrapping if there's insufficient space */
+}
+
+/*.service-list {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%; /* Triple the width to accommodate all three services */
+/*} */
+
+/* .service {
+     width: 33.333%; /* Each service takes up one-third of the total width */
+   /*flex-shrink: 0; /* Prevent services from shrinking */
+   /*padding: 20px;
+     box-sizing: border-box;
+}*/
+
+/* Update slider button styles for better visibility */
+.slider-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-button.active {
+  background-color: #608540;
+  transform: scale(1.2);
+  background-color: #608540; /* Active button color */
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-33.3333%); }
+  66% { transform: translateX(-66.6666%); }
+  100% { transform: translateX(0); }
+}
+
+
+.services,
+.service,
+.service-list img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.services .service .service-list .description {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.services .service .service-list .description p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.services,
+.about,
+.clients {
+  padding: 40px 20px;
+}
+
+.services h2,
+.about h2,
+.clients h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-list,
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service,
+.client {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+  border-radius: 5px;
+  min-width: 200px;
+}
+
+.services .service-list .service .description button{
+  background-color: #6085409a;
+  border-radius: 20px;
+  border: 1px solid #745a55;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Styles for blog */
+.blog {
+  padding: 40px 20px;
+  background: rgba(109, 106, 106, 0.281);
+}
+
+.blog h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+  border-radius: 5px;
+  min-width: 200px;
+}
+.about{
+  
+  color: rgb(8, 8, 8);
+  font-size: 20px;
+}
+
+
+/* Container styling for two columns */
+.contact-container {
+  display: flex;
+  gap: 20px; /* Space between the two columns */
+  margin-top: 50px;
+}
+
+.contact-section, .location-section {
+  flex: 1; /* Each section takes equal width */
+  background-color: #6085409a; /* Dark background for contrast */
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* Section headings */
+.contact-section h2, .location-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Info list styling */
+.info-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+}
+
+/* Map iframe styling */
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: 0;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #6085409a;
+  color: white;
+  padding: 20px 0;
+  margin-top: 5px;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+}
+

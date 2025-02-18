@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Static/CSS/signin.css">
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='CSS/signin.css') }}">-->
+    <link rel="icon" href="/Static/Images/Logo 7(4).png"/>
+    <title>Agri-Connect|Sign In</title>
+</head>
+<body>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1 id="#">Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forget">
+                <label><input type="checkbox" id="remember">Remember me</label>
+                <a href="https://www.google.com/search?q=forget+email+password&rlz=1C1GCEU_enRW1127RW1127&oq=forget&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyCQgAEEUYORiABDIHCAEQABiABDIHCAIQLhiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQLhiABDIHCAgQLhiABDIJCAkQABgKGIAE0gEJMTI5MjZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Forget password?</a>
+            </div>
+            <button class="btn" type="submit">Login</button>
+            <div class="register-link">
+               <i class="fa fa-google-plus-circle" style="font-size:48px;color:red"></i><a href="https://www.google.com/search?q=google+login&rlz=1C1GCEU_enRW1127RW1127&oq=google+lo&gs_lcrp=EgZjaHJvbWUqEwgAEAAYgwEYkQIYsQMYgAQYigUyEwgAEAAYgwEYkQIYsQMYgAQYigUyBwgBEAAYgAQyCggCEAAYyQMYgAQyBggDEEUYOTINCAQQABiSAxiABBiKBTIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDk3ODhqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8">Sign in with google</a>
+                <p>Don't have an account</p>
+                <!--<a href="{{ url_for('signup') }}">Register</a>-->
+                <a href="/Templates/signup.html">Register</a>
+            </div>
+        </form>
+    </div>
+    
+<script src="/Static/JS/signin.js"></script> 
+<!--<script src="{{ url_for('static', filename='js/signin.js') }}"></script>-->
+</body>
+</html>

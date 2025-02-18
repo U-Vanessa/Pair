@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings  | Dash</title>
+    <link rel="icon" href="/Static/Images/Logo 7(4).png"/>
+    <link rel="stylesheet" href="/Static/CSS/set.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h1>Settings</h1>
+    
+        <!-- Update Section -->
+        <div class="settings-section">
+            <h2>Update Settings</h2>
+            <form id="updateForm">
+
+                <label for="settingValue">Username:</label>
+                <input type="text" id="settingValue" placeholder="Enter new username" required>
+
+
+                <label for="settingName">Password:</label>
+                <input type="text" id="settingName" placeholder="Enter new Password" required>
+
+                <label for="settingValue">Confirm new Password:</label>
+                <input type="text" id="settingName" placeholder="Confirm new Password" required>
+                
+                <button type="button" onclick="updateSetting()">Update</button>
+            </form>
+        </div>
+    
+        <!-- Remove Section -->
+        <div class="settings-section">
+            <h2>Remove Setting</h2>
+            <ul id="settingsList">
+                <li data-setting="Example Setting 1">Remove Users <button onclick="removeSetting(this)">Remove</button></li>
+                <li data-setting="Example Setting 2">Remove Crops <button onclick="removeSetting(this)">Remove</button></li>
+            </ul>
+        </div>
+    </div>
+    <script src="/Static/JS/set.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #325b15;
+}
+
+.settings-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.settings-section {
+    margin-top: 20px;
+}
+
+.settings-section h2 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #666;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#settingsList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#settingsList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+#settingsList button {
+    background-color: #ff4d4d;
+}
+
+#settingsList button:hover {
+    background-color: #d9534f;
+}

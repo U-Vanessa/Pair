@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Static/CSS/signup.css">
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='CSS/signup.css') }}"> -->
+    <link rel="icon" href="/Static/Images/Logo 7(4).png"/>
+    <title>Agri-Connect</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h2>Agri-Connect Registration</h2>
+            <form>
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="row">
+                        <div class="column">
+                            <label for="firstname">Firstname</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" required>
+                        </div>
+                        <div class="column">
+                            <label for="lastname">Lastname</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="gender">Gender</label>
+                            <select id="gender" required>
+                                <option value="" disabled selected>Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label for="id">ID</label>
+                            <input type="text" id="id" placeholder="Enter your ID" required>
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <!-- Location Information -->
+                <fieldset>
+                    <legend>Location</legend>
+                    <div class="row">
+                        <div class="column">
+                            <label for="province">Province</label>
+                            <select id="province" onchange="populateDistricts()" required>
+                                <option value="" disabled selected>Select Province</option>
+                                <option value="western">Western Province</option>
+                                <option value="eastern">Eastern Province</option>
+                                <option value="southern">Southern Province</option>
+                                <option value="northern">Northern Province</option>
+                                <option value="kigali">Kigali City</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label for="district">District</label>
+                            <select id="district" onchange="populateSectors()" required>
+                                <option value="" disabled selected>Select District</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="sector">Sector</label>
+                            <select id="sector" onchange="populateCells()" required>
+                                <option value="" disabled selected>Select Sector</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label for="cell">Cell</label>
+                            <select id="cell" onchange="populateVillages()" required>
+                                <option value="" disabled selected>Select Cell</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="village">Village</label>
+                        <input type="text" id="village" placeholder="Village" required>
+                    </div>
+                </fieldset>
+    
+                <!-- Education Information -->
+                <fieldset>
+                    <legend>Education</legend>
+                    <div class="row">
+                        <div class="column">
+                            <label for="degree">Degree</label>
+                            <select id="degree" required>
+                                <option value="" disabled selected>Select your degree</option>
+                                <option value="pld">Primary Leaving Diploma (PLD)</option>
+                                <option value="one">Ordinary Level National Examination (ONE)</option>
+                                <option value="a2">Advanced Level Diploma (A2)</option>
+                                <option value="a1">Accreditation Certificate (A1)</option>
+                                <option value="a0">Bachelors' Degree (A0)</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label for="school">School Name</label>
+                            <input type="text" id="school" placeholder="School Name" required>
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <!-- Occupation Information -->
+                <fieldset>
+                    <legend>Occupation</legend>
+                    <div class="row">
+                        <div class="column">
+                            <label for="occupation">Type of Occupation</label>
+                            <input type="text" id="occupation" placeholder="Occupation" required>
+                        </div>
+                        <div class="column">
+                            <label for="specifications">Specifications</label>
+                            <input type="text" id="specifications" placeholder="Specifications" required>
+                        </div>
+                    </div>
+                </fieldset>
+                
+    
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    
+    
+<script src="/Static/JS/signup.js"></script>
+<!--<script src="{{ url_for('static', filename='js/signup.js') }}"></script>-->
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    
+    <!--<link href="/AgriConnect/Static/Images/Logo 7(4).png" rel="icon"> -->
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spinkit/1.2.5/spinkit.min.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='CSS/home.css') }}">-->
+    <link rel="icon" href="/Static/Images/Logo 7(4).png"/>
+    <link rel="stylesheet" href="/Static/CSS/home.css">
+    
+    <title>Agri-Connect</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      
+      <!-- Logo Section -->
+      
+      <!-- Navigation Links -->
+      <nav id="navbar" class="navbar">
+        <ul class="nav-list d-flex align-items-center" style="gap: 150px; list-style: none; margin: 0; padding: 0;">
+          <a href="home.html" class="logo">
+            <!--<img src="{{ url_for('static', filename='Images/Logo 7(4).png') }}" alt="Logo" class="img-fluid logo-image" style="height: 200px; width: auto;">-->
+            <!--<link href="{{ url_for('static', filename='Images/Logo 7(4).png') }}" rel="icon"/>-->
+            <img src="/Static/Images/Logo 7(4).png" alt="Logo" class="img-fluid logo-image" style="height: 200px; width: auto;">
+            </a>
+            <div class="navi">
+              <!--<li><a class="nav-link scrollto active" href="{{url_for('home')}}">HOME</a></li>-->
+              <li><a class= "nav-link scrollto active" href= "#home">HOME</a></li>
+              <li><a class="nav-link scrollto" href="#about">ABOUT</a></li>
+              <li><a class="nav-link scrollto" href="#service">SERVICES</a></li>
+              <li><a class="nav-link scrollto" href="#contactus">CONTACT US</a></li>
+              <button class="btn" style="
+                                           background-color: #6085406b; 
+                                           color: #FFFFFF; 
+                                           padding: 12px 30px; 
+                                           font-size: 16px; 
+                                           font-weight: bold; 
+                                           border: none; 
+                                           border-radius: 25px; 
+                                           cursor: pointer; 
+                                           transition: all 0.3s ease; 
+                                           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                               " 
+              onmouseover="this.style.backgroundColor='#4a6b34'; this.style.boxShadow='0 6px 8px rgba(0, 0, 0, 0.15)'; this.style.transform='translateY(-2px)';" 
+              onmouseout="this.style.backgroundColor='#608540'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'; this.style.transform='translateY(0)';" 
+              onmousedown="this.style.backgroundColor='#3f5a2a'; this.style.boxShadow='0 3px 5px rgba(0, 0, 0, 0.2)'; this.style.transform='translateY(1px)';" 
+              onmouseup="this.style.backgroundColor='#4a6b34'; this.style.boxShadow='0 6px 8px rgba(0, 0, 0, 0.15)'; this.style.transform='translateY(-2px)';">
+              <a href="/Templates/signin.html">LOGIN</a></li></button>
+              <!--<a href="{{ url_for('signin') }}">LOGIN</a></button>-->
+
+          </li>
+        </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header Section -->
+
+   <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center">
+      <section class="hero">
+        <!--<img src="https://media.istockphoto.com/id/1495390170/photo/unrecognizable-male-farmer-touching-his-wheat-crop.jpg?s=612x612&w=0&k=20&c=Jx4ysPbpe0N2Wdb_pBEDLk7GffP20ZujBr39oqbzHNI=" alt=""> -->
+        <h2>EMPOWER, CONNECT, SUSTAIN</h2>
+        <a href="#" id="services" class="btn">Explore Our Services</a>
+        <a href="#" id="services" class="btn">More About Us</a>
+    </section>
+
+    <section id="service" class="services">
+      <h2>OUR SERVICES</h2>
+      <div class="service-slider">
+          <div id="services" class="service-list">
+              <div class="service">
+                <!--<img src="{{ url_for('static', filename='Images/Crops.jpg') }}" alt="Crops">-->
+                  <img src="/Static/Images/Crops.jpg" alt="">
+                  <div class="description">
+                      <h3>CROPS</h3>
+                      <p>Our mobile application strengthens farmer-customer bonds, Not only them but also ...</p>
+                      <button><a href="/Templates/signin.html">Book now</a></button>
+                      <!--<button><a href="{{ url_for('signin') }}">Book now</a></button>-->
+
+                  </div>
+              </div>
+              <div class="service">
+                <!--<img src="{{ url_for('static', filename='Images/climattte.webp') }}" alt="Climate Tips">-->
+                  <img src="/Static/Images/climattte.webp" alt="">
+                  <div class="description">
+                      <h3>CLIMATE CHANGE TIPS</h3>
+                      <p>We envision an interconnected ecosystem that promotes climate-resilient agriculture...</p>
+                      <button><a href="/Templates/signin.html">Book now</a></button>
+                      <!--<button><a href="{{ url_for('signin') }}">Book now</a></button>-->
+
+                  </div>
+              </div>
+              <div class="service">
+                <!--<img src="{{ url_for('static', filename='Images/Farmere.jpg') }}" alt="Farming">-->
+                  <img src="/Static/Images/Farmere.jpg" alt="">
+                  <div class="description">
+                      <h3>FARMING</h3>
+                      <p>Our mission is to empower farmers by developing an intuitive mobile app, Which will help...</p>
+                      <button><a href="/Templates/signin.html">Book now</a></button>
+                      <!--<button><a href="{{ url_for('signin') }}">Book now</a></button>-->
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Navigation buttons -->
+       
+      <div class="slider-buttons">
+        <button class="slider-button" data-index="0" onclick="moveSlide(0)"></button>
+        <button class="slider-button" data-index="1" onclick="moveSlide(1)"></button>
+        <button class="slider-button" data-index="2" onclick="moveSlide(2)"></button>
+      </div>
+  </section>
+  
+
+  <section class="blog" id="about">
+    <h2>ABOUT US</h2>
+    <div class="blog-list">
+        <div class="blog-post">
+            <h3>MISSION</h3>
+            <p>To empower farmers to overcome the challenges posed by climate change, diversify their crops, and generate sustainable employment opportunities. This will be achieved through the development of an intuitive mobile application that enables customers to track their farmer suppliers, fostering sustainable agricultural relationships.</p>
+        </div>
+        <div class="blog-post">
+            <h3>VISION</h3>
+            <p>To create a transformative ecosystem that promotes climate-resilient, diversified agriculture and strengthens the bond between farmers and their customers. By leveraging innovative technology, we aim to empower farmers, facilitate job creation, and cultivate a sustainable future for the agricultural sector, fostering an interconnected and resilient food system.</p>
+        </div>
+    </div>
+</section>
+
+
+<div id="contactus" class="paddsection">
+  <div class="container contact-container">
+    <!-- Get in Touch Column -->
+    <div class="contact-section">
+      <h2 class="mb-30 text-center">GET IN TOUCH</h2>
+      <ul class="info-list">
+        <li><span>Norrsken House Kigali, 1 KN 78 St, Kigali</span></li>
+        <li><span>Kigali, Rwanda</span></li>
+        <li><span>+250 784 486 209</span></li>
+        <li><span>info@agriconnect.com</span></li>
+      </ul>
+    </div>
+
+    <!-- Location Column -->
+    <div class="location-section" id="contactus">
+      <h2 class="mb-30 text-center">LOCATION</h2>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5050470011747!2d30.05741827507267!3d-1.9511718980311334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5a86d814c61%3A0x7d3b83e12b1c11a9!2sNorrsken%20House%20Kigali!5e0!3m2!1sen!2srw!4v1718736783706!5m2!1sen!2srw" 
+          allowfullscreen="" 
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+<p class="text-center"><b>&copy; 2024 AGRI-CONNECT. All rights reserved.<b></b></p>
+</footer>
+  
+
+  <!-- External JS -->
+  <script src="/Static/JS/home.js"></script>
+ <!--<script src="{{ url_for('static', filename='js/home.js') }}"></script>-->
+</body>
+
+</html>
