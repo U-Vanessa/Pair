@@ -208,20 +208,6 @@ body {
   border-radius: 8px;
 }
 
-/* .hero img {
-  background-color: #211010e0;
-  border-radius: 5px;
-  background-size: cover;        /* Make the image cover the entire area */
-  /* background-position: center;   /* Center the image */
-  /*background-repeat: no-repeat;  /* Prevent the image from repeating */
-  /*width: 100%;                   /* Full width */
-  /*height: 100vh;              /* Fixed height */
-  /*object-fit: cover;             /* Ensure the image retains its aspect ratio */
-  /*position: relative;
-  /*z-index: -1;*/
-  /*margin-top: 0px;
-}*/
-
 .hero .btn {
   display: inline-block;
   margin: 10px;
@@ -234,16 +220,6 @@ body {
 
 /* Serives and blog Styling */
 
-/*.services {
-  display: grid;
-  gap: 20px;
-  max-width: 100%;
-  margin: 50px auto;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #6085409a;
-}*/
-
 .service {
   display: flex;
   flex-direction: column;
@@ -254,17 +230,6 @@ body {
   background-color: #6085409a;
 }
 
-/*
-.services {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  padding: 20px;
-  background-color: #6085409a;
-}
-  */
-
 .service-slider {
   display: flex;
   transition: transform 0.5s ease; /* Smooth transition */
@@ -274,14 +239,6 @@ body {
   flex: 0 0 33.3333%; /* Each item takes one-third of the full width */
 
 }
-
-/*
-    .service img {
-     width: 60%;
-     max-height: 300px; /* Adjust this value to control image height */
-  /* object-fit: cover; /* Ensures the image fills the container without distortion */
-  /* border-radius: 8px;
-}*/
 
 .service img {
   width: 100%; /* Make the image fill its container */
@@ -302,18 +259,6 @@ body {
   flex-wrap: wrap; /* Allow wrapping if there's insufficient space */
 }
 
-/*.service-list {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 100%; /* Triple the width to accommodate all three services */
-/*} */
-
-/* .service {
-     width: 33.333%; /* Each service takes up one-third of the total width */
-   /*flex-shrink: 0; /* Prevent services from shrinking */
-   /*padding: 20px;
-     box-sizing: border-box;
-}*/
 
 /* Update slider button styles for better visibility */
 .slider-button {
@@ -483,7 +428,7 @@ body {
 }
 
 /* Footer Styling */
-footer {
+/*footer {
   background-color: #6085409a;
   color: white;
   padding: 20px 0;
@@ -491,5 +436,12 @@ footer {
   bottom: 0;
   padding: 10px;
   width: 100%;
-}
+}*/
 
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #006400;
+  color: white;
+  font-weight: 600;
+}
