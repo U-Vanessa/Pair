@@ -120,11 +120,40 @@ main {
 }
 
 /* Training & Support Section */
+/*
 .training-support {
     background-color: white;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.training-support img{
+
+}
+*/
+
+.training-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Space between text and image */
+    padding: 20px;
+}
+
+.training-text {
+    flex: 1; /* Takes half of the space */ 
+    max-width: 50%; /* Ensures text stays within half */
+}
+
+.training-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.training-image img {
+    width: 100%;
+    height: auto;
 }
 
 /* Footer Styles */

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers | Agri-Connect</title>
+    <link rel="stylesheet" href="/Conne/Static/CSS/customer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Agri-Connect</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Requests</a></li>
+            <li><a href="#" class="active">Customers</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main class="customer-container">
+        <h1>Customer Management</h1>
+
+        <!-- Search and Filter -->
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search customers...">
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="pending">Pending</option>
+                <option value="approved">Approved</option>
+            </select>
+        </div>
+
+        <!-- Customer Table -->
+        <div class="customer-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Status</th>
+                        <th>Orders</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#C001</td>
+                        <td>Jane Doe</td>
+                        <td>jane@example.com</td>
+                        <td class="approved">Approved</td>
+                        <td>5</td>
+                        <td>
+                            <button class="contact">Contact</button>
+                            <button class="remove">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#C002</td>
+                        <td>Mark Smith</td>
+                        <td>mark@example.com</td>
+                        <td class="pending">Pending</td>
+                        <td>2</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="remove">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

@@ -37,7 +37,7 @@
           </li>
 
           <li>
-            <a href="requests.html">
+            <a href="/Conne/Templates/request.html">
               <span class="icon">
                 <ion-icon name="receipt-outline"></ion-icon>
               </span>
@@ -46,7 +46,7 @@
           </li>
 
           <li>
-            <a href="customers.html">
+            <a href="/Conne/Templates/customer.html">
               <span class="icon">
                 <ion-icon name="people-outline"></ion-icon>
               </span>
@@ -198,39 +198,6 @@
         </div>
       </div>
     </div>
-
-    <!-- =========== Scripts =========  -->
-    <script>
-      function updateStatus(selectElement) {
-        const statusCell = selectElement.parentElement.previousElementSibling;
-        const statusValue = selectElement.value;
-
-        // Log for debugging
-        console.log(`Status updated to: ${statusValue}`);
-
-        // Update UI
-        statusCell.textContent = statusValue;
-
-        // Update UI styling based on statusValue
-        switch (statusValue) {
-          case 'Completed':
-            statusCell.style.color = 'green';
-            break;
-          case 'Pending':
-            statusCell.style.color = 'orange';
-            break;
-          case 'Declined':
-            statusCell.style.color = 'red';
-            break;
-          default:
-            statusCell.style.color = 'black';
-            break;
-        }
-
-        alert(`Status updated to: ${statusValue}`);
-      }
-
-    </script>
 
     <script src="/Conne/Static/JS/farm.js"></script>
     <!--<script src="{{ url_for('static', filename='js/farm.js') }}"></script>-->

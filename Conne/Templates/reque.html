@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests | Agri-Connect</title>
+    <link rel="stylesheet" href="/Conne/Static/CSS/request.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Agri-Connect</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#" class="active">Requests</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main class="request-container">
+        <h1>Requests Management</h1>
+        
+        <!-- Request Filter Buttons -->
+        <div class="request-tabs">
+            <!--<button class="tab active" onclick="showRequests('farmer')">Farmer Requests</button>-->
+            <button class="tab" onclick="showRequests('customer')">Customer Requests</button>
+            <!--<button class="tab" onclick="showRequests('supplier')">Supplier Requests</button>-->
+        </div>
+
+        <!-- Request Table -->
+        <div class="requests-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Requester</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>John Doe</td>
+                        <td>Farmer</td>
+                        <td class="pending">Pending</td>
+                        <td>Feb 20, 2025</td>
+                        <td>
+                            <button class="approve">Approve</button>
+                            <button class="reject">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Mary Smith</td>
+                        <td>Customer</td>
+                        <td class="approved">Approved</td>
+                        <td>Feb 19, 2025</td>
+                        <td>
+                            <button class="view">View</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

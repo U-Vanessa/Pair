@@ -11,6 +11,7 @@ Agri-Connect is a web platform designed to empower farmers by providing them wit
 - **About Page:** Highlights the mission, vision, and story behind Agri-Connect.
 - **Products Page:** Showcases the web and mobile app features, market insights dashboard, and training support.
 - **Contact Page:** Includes a contact form, location map, and social media/contact information.
+- **Dashboard Pages:** Includes the dashboards which are farmers, supplier and customer.
 - **Responsive Design:** Styled using CSS for an optimized user experience.
 
 ## File Structure
